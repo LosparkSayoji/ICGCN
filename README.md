@@ -3,7 +3,7 @@
 [![Paper](https://img.shields.io/badge/Paper-Neural_Networks-blue.svg)](https://doi.org/10.1016/j.neunet.2024.107102)
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.neunet.2024.107102-green.svg)](https://doi.org/10.1016/j.neunet.2024.107102)
 
-This is the official PyTorch implementation for our paper: **"Information-controlled Graph Convolutional Network for Multi-view Semi-supervised classification"**, published in *Neural Networks*, 2024.
+This is the official PyTorch implementation for our paper: **"Information-controlled Graph Convolutional Network for Multi-view Semi-supervised classification"**, published in *Neural Networks*, 2025.
 
 ---
 
@@ -24,11 +24,26 @@ Multi-view learning using Graph Convolutional Networks (GCNs) often suffers from
 * `utils.py`: Auxiliary functions for evaluation.
 
 ## 🛠️ Installation
-1. Install the core dependencies:
-   ```bash
-   pip install -r requirements.txt
-  
+Install the core dependencies:
+```bash
+pip install -r requirements.txt
+````
+
 ## 🚀 Usage
 To train and evaluate the ICGCN model on the default dataset:
 ```bash
-python main.py
+python main.py --dataset 100leaves --epoch 200 --lr 0.001 --gamma 0.9
+```
+
+## 📝 Citation
+We welcome the citation of our work if it proves useful to your research:
+```bibtex
+@article{shi2025information,
+  title={Information-controlled graph convolutional network for multi-view semi-supervised classification},
+  author={Shi, Yongquan and Pi, Yueyang and Liu, Zhanghui and Zhao, Hong and Wang, Shiping},
+  journal={Neural Networks},
+  volume={184},
+  pages={107102},
+  year={2025},
+}
+```
