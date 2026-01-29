@@ -10,7 +10,7 @@ This is the official PyTorch implementation for our paper: **"Information-contro
 ## 🌟 Introduction
 Multi-view learning using Graph Convolutional Networks (GCNs) often suffers from the **over-smoothing problem**, which limits their ability to capture long-range dependencies. While decoupling operations can mitigate this, it often leads to the loss of feature transformation modules and reduced model expressiveness.
 
-**ICGCN** (Information-controlled Graph Convolutional Network) addresses these challenges by:
+**ICGCN** addresses these challenges by:
 * **Feature Transformation with Orthogonality**: We maintain the node embedding paradigm during propagation by imposing orthogonality constraints on the feature transformation module.
 * **Alleviating Over-smoothing**: By introducing a damping factor based on residual connections, we theoretically demonstrate that our model alleviates over-smoothing while retaining expressive feature transformations.
 * **Numerical Stability**: We prove that our model stabilizes both forward inference and backward propagation, ensuring robust training for multi-view semi-supervised classification.
