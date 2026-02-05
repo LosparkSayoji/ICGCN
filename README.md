@@ -7,7 +7,7 @@ This is the official PyTorch implementation for our paper: **"Information-contro
 
 ---
 
-## 🌟 Introduction
+## Introduction
 Multi-view learning using Graph Convolutional Networks (GCNs) often suffers from the **over-smoothing problem**, which limits their ability to capture long-range dependencies. While decoupling operations can mitigate this, it often leads to the loss of feature transformation modules and reduced model expressiveness.
 
 **ICGCN** addresses these challenges by:
@@ -15,7 +15,7 @@ Multi-view learning using Graph Convolutional Networks (GCNs) often suffers from
 * **Alleviating Over-smoothing**: By introducing a damping factor based on residual connections, we theoretically demonstrate that our model alleviates over-smoothing while retaining expressive feature transformations.
 * **Numerical Stability**: We prove that our model stabilizes both forward inference and backward propagation, ensuring robust training for multi-view semi-supervised classification.
 
-## 📂 Project Structure
+## Project Structure
 * `model.py`: The core architecture of ICGCN.
 * `DataLoader.py`: Scripts for data loading and multi-view graph construction.
 * `train.py`: Main training loop.
@@ -23,19 +23,19 @@ Multi-view learning using Graph Convolutional Networks (GCNs) often suffers from
 * `args.py`: Configuration and hyper-parameters.
 * `utils.py`: Auxiliary functions for evaluation.
 
-## 🛠️ Installation
+## Installation
 Install the core dependencies:
 ```bash
 pip install -r requirements.txt
 ````
 
-## 🚀 Usage
+## Usage
 To train and evaluate the ICGCN model on the default dataset:
 ```bash
 python main.py --dataset 100leaves --epoch 200 --lr 0.001 --gamma 0.9
 ```
 
-## 📝 Citation
+## Citation
 We welcome the citation of our work if it proves useful to your research:
 ```bibtex
 @article{shi2025information,
