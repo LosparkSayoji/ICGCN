@@ -89,9 +89,6 @@ def load_mat_data(datasets: str, k: int, path: str = "./data/"):
     num_views = x.shape[1]
     for i in range(num_views):
         view_features = x[0, i]
-        if datasets == '100leaves':
-            view_features = np.transpose(view_features)
-
         view_features = view_features.astype('float32')
         features_list.append(view_features)
         nfeats_list.append(view_features.shape[1])
@@ -172,3 +169,4 @@ def generate_splits(gnd: torch.Tensor, args) -> Tuple[torch.Tensor, torch.Tensor
             test_idx.append(idx)
 
     return torch.tensor(train_idx).long(), torch.tensor(test_idx).long()
+
